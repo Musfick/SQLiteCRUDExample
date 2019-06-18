@@ -55,7 +55,7 @@ public class DatabaseQueryClass {
     //Delete Grocery By Code Number
     public long deleteStudentByCode(String code)
     {
-        return 0;
+        return 1;
     }
 
 
