@@ -4,17 +4,16 @@ public class Grocery {
 
 
     private String mName;
-    private String mQuantity;
+    private String mCode;
     private String mDateItemAdded;
     private int id;
 
     //Empty Constructor
     public Grocery(){
     }
-
-    public Grocery(String mName, String mQuantity, String mDateItemAdded, int id) {
+    public Grocery(String mName, String mCode, String mDateItemAdded, int id) {
         this.mName = mName;
-        this.mQuantity = mQuantity;
+        this.mCode = mCode;
         this.mDateItemAdded = mDateItemAdded;
         this.id = id;
     }
@@ -27,12 +26,12 @@ public class Grocery {
         this.mName = mName;
     }
 
-    public String getmQuantity() {
-        return mQuantity;
+    public String getmCode() {
+        return mCode;
     }
 
-    public void setmQuantity(String mQuantity) {
-        this.mQuantity = mQuantity;
+    public void setmCode(String mCode) {
+        this.mCode = mCode;
     }
 
     public String getmDateItemAdded() {
@@ -50,4 +49,5 @@ public class Grocery {
     public void setId(int id) {
         this.id = id;
     }
+
 }

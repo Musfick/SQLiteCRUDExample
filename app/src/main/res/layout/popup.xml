@@ -32,7 +32,8 @@
                 android:layout_below="@id/enter_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/quantity_hint"/>
+                android:hint="@string/grocerycode_hint"
+                />
             <Button
                 android:id="@+id/save_btn"
                 android:layout_below="@id/enter_quantity"

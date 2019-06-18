@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private AlertDialog.Builder mDialogBuilder;
     private AlertDialog mDialog;
     private EditText mGroceryItem;
-    private EditText mQuantity;
+    private EditText mGroceryCode;
     private Button mSaveButton;
 
     @Override
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         mDialogBuilder = new AlertDialog.Builder(this);
         View view = getLayoutInflater().inflate(R.layout.popup,null);
         mGroceryItem = (EditText)view.findViewById(R.id.enter_item);
-        mQuantity = (EditText)view.findViewById(R.id.enter_quantity);
+        mGroceryItem = (EditText)view.findViewById(R.id.enter_quantity);
         mSaveButton = (Button)view.findViewById(R.id.save_btn);
 
         mDialogBuilder.setView(view);
@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void saveGroceryToDB() {
+
     }
 
 }

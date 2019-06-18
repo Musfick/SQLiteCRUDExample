@@ -22,10 +22,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        String CREATE_GROCERY_TABlE = "CREATE TABLE" + Constants.TABLE_NAME + "("
+        String CREATE_GROCERY_TABlE = "CREATE TABLE "  + Constants.TABLE_NAME + "("
                 +Constants.KEY_ID + "INTEGER PRIMARY KEY,"    //ID Column
                 +Constants.KEY_GROCERY_ITEM + "TEXT,"         //Item Column
-                +Constants.KEY_QTY_NUMBER + "TEXT,"           //Quantity Column
+                +Constants.KEY_GROCERY_CODE + "TEXT,"           //Quantity Column
                 +Constants.KEY_DATE_NAME + "LONG);";          //Date Column
 
         db.execSQL(CREATE_GROCERY_TABlE);
@@ -34,61 +34,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
-        db.execSQL("DROP TABLE IF EXISTS" + Constants.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS "  + Constants.TABLE_NAME);
         onCreate(db);
 
     }
-
-    /**
-     *  CRUD OPERATIONS: Create, Read, Update, Delete Methods
-     */
-
-
-    //Add Grocery
-    public void AddGrocery(Grocery grocery)
-    {
-
-    }
-
-
-    //Get a Grocery
-    public Grocery getGrocery(int id)
-    {
-        return null;
-    }
-
-
-    //Get all Groceries
-    public List<Grocery> getAllGrocery()
-    {
-        return null;
-    }
-
-
-    //Update Grocery
-    public  int updateGrocery(Grocery grocery)
-    {
-        return 0;
-    }
-
-
-    //Delete Grocery
-    public  void deleteGrocery(int id)
-    {
-
-    }
-
-
-    //Get count
-    public int getGroceriesCount()
-    {
-        return 0;
-    }
-
-
-
-
-
-
 
 }
